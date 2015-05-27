@@ -19,7 +19,8 @@ if hash hub 2>/dev/null; then
   hub create
 fi
 
-if [ -z "$(git ls-remote origin master)" ]; then
+hascommits=$(git ls-remote origin master)
+if [ -z "$hascommits" ]; then
   echo "Pushing to GitHub"
   git push -u origin master
 fi
