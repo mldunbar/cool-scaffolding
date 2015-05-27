@@ -10,3 +10,7 @@ Clone this repo:
     git commit -m "Initial commit"
     hub create
     git push -u origin master
+
+Install the dependencies
+
+    bower install && npm install
